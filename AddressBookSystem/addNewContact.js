@@ -37,5 +37,9 @@ class AddNewContact{
 
     }
 
+    deleteContact(firstName,lastname){
+        this.contacts=this.contacts.filter(Contact=>!(Contact.firstName===firstName&&Contact.lastname===lastname));
+    }
+
 }
 module.exports =AddNewContact;
