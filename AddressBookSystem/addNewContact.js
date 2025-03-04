@@ -5,11 +5,14 @@ class AddNewContact{
         this.contacts=[];
     }
     addContact(newcantact){
-        if(newcantact instanceof Contact){
-        this.contacts.push(newcantact);
-        console.log("Contact was added")
-        }else{
+        if(!newcantact instanceof Contact){
             console("invalid object")
+        }
+        let isDuplicate=this.contacts.filter(C=>C.firstName===newcantact.firstName&&C.lastname===newcantact.lastname);
+        if(isDuplicate.length>0){
+            console.log("this is a duplicate content con't add");
+        }else{
+            this.contacts.push(newcantact);
         }
     }
 
@@ -45,6 +48,8 @@ class AddNewContact{
         let count=this.contacts.reduce((acc, )=>acc+1,0);
         console.log(`the count of contact ${count}`);
     }
+
+    
 
 }
 module.exports =AddNewContact;
