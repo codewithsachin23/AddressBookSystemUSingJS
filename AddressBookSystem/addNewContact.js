@@ -60,9 +60,12 @@ class AddNewContact{
         let seachConatct=this.contacts.filter(Contact=>Contact.city===city);
         console.log(`${seachConatct}`);
     }
+    CountByCityOrSatate(city, state){
+        let seachConatct=this.contacts.filter(Contact=>Contact.city===city&&Contact.state===state);
+        let count=seachConatct.reduce((acc, )=>acc+1,0);
+        console.log(`CountByCityOrSatat ${count}`)
 
-
-    
+    }
 
 }
 module.exports =AddNewContact;
