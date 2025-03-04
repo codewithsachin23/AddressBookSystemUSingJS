@@ -18,6 +18,7 @@ try {
 
 addNewContact.displayContacts();
 
+
 addNewContact.editDetails("Sachin","Shukla","Ramm","Shukla");
 
 console.log("before delation")
