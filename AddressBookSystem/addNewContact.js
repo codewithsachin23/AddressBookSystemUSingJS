@@ -48,6 +48,10 @@ class AddNewContact{
         let count=this.contacts.reduce((acc, )=>acc+1,0);
         console.log(`the count of contact ${count}`);
     }
+    searchByCityOrSatate(city, state){
+        let seachConatct=this.contacts.filter(Contact=>Contact.city===city&&Contact.state===state);
+        console.log(`${seachConatct}`);
+    }
 
     
 

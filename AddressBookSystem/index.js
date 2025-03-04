@@ -26,3 +26,4 @@ addNewContact.deleteContact("Sachin","Shukla");
 console.log("After Deletion")
 
 addNewContact.countContact();
+addNewContact.searchByCityOrSatate("Bhopal","Madhya Pradesh");
