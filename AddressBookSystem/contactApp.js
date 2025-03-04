@@ -49,7 +49,5 @@ class Contact{
     }
 
 }
+module.exports = Contact;
 
-let contact1=new Contact("Sachin","Shukla","anand Nagar Bhopal","Bhopal","madhya pradesh",462022,7879268756,"sachinshukla@gmail.com");
-console.log(contact1);
-console.log(contact1.toString());
