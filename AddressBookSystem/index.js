@@ -32,4 +32,12 @@ addNewContact.viewBySatate("Madhya Pradesh")
 addNewContact.CountByCityOrSatate("Bhopal","Madhya Pradesh");
 
 console.log("\nSorting Contacts Alphabetically:");
-myAddressBook.sortContactsByName();
+addNewContact.sortContactsByName();
+console.log("\nSorting Contacts by City:");
+addNewContact.sortContactsByCity();
+
+console.log("\nSorting Contacts by State:");
+addNewContact.sortContactsByState();
+
+console.log("\nSorting Contacts by Zip:");
+addNewContact.sortContactsByZip();
