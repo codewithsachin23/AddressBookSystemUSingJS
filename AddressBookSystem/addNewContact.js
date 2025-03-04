@@ -41,5 +41,10 @@ class AddNewContact{
         this.contacts=this.contacts.filter(Contact=>!(Contact.firstName===firstName&&Contact.lastname===lastname));
     }
 
+    countContact(){
+        let count=this.contacts.reduce((acc, )=>acc+1,0);
+        console.log(`the count of contact ${count}`);
+    }
+
 }
 module.exports =AddNewContact;

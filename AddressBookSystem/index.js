@@ -14,11 +14,12 @@ try {
 }
 
 addNewContact.displayContacts();
-// addNewContact.editDetails("Sachin","Shukla","Ramm","Shukla");
+
+addNewContact.editDetails("Sachin","Shukla","Ramm","Shukla");
 
 console.log("before delation")
 addNewContact.displayContacts();
 addNewContact.deleteContact("Sachin","Shukla");
 console.log("After Deletion")
 
-
+addNewContact.countContact();
