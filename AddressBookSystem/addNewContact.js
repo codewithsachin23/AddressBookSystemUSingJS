@@ -22,5 +22,20 @@ class AddNewContact{
         }
     }
 
+    editDetails(firstName,lastname,newFirstName,newLastName){
+      let findContact=this.contacts.filter(Contact => Contact.firstName===firstName &&Contact.lastname===lastname)
+      if(findContact.length>0){
+       findContact.forEach(Contact=>{
+        Contact.firstName=newFirstName
+        Contact.lastname=newLastName
+      })
+      }else{
+        console.log("contact is not found")
+      }
+      console.log(findContact);
+
+
+    }
+
 }
 module.exports =AddNewContact;

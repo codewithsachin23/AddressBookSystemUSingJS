@@ -14,3 +14,5 @@ try {
 }
 
 addNewContact.displayContacts();
+addNewContact.editDetails("Sachin","Shukla","Ramm","Shukla");
+
