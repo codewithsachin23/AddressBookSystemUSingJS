@@ -52,6 +52,15 @@ class AddNewContact{
         let seachConatct=this.contacts.filter(Contact=>Contact.city===city&&Contact.state===state);
         console.log(`${seachConatct}`);
     }
+    viewByCity(city){
+        let seachConatct=this.contacts.filter(Contact=>Contact.city===city);
+        console.log(`${seachConatct}`);
+    }
+    viewBySatate(state){
+        let seachConatct=this.contacts.filter(Contact=>Contact.city===city);
+        console.log(`${seachConatct}`);
+    }
+
 
     
 

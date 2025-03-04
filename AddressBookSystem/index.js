@@ -18,12 +18,5 @@ try {
 
 addNewContact.displayContacts();
 
-addNewContact.editDetails("Sachin","Shukla","Ramm","Shukla");
-
-console.log("before delation")
-addNewContact.displayContacts();
-addNewContact.deleteContact("Sachin","Shukla");
-console.log("After Deletion")
-
-addNewContact.countContact();
-addNewContact.searchByCityOrSatate("Bhopal","Madhya Pradesh");
+addNewContact.viewByCity("Bhopal");
+addNewContact.viewBySatate("Madhya Pradesh")
