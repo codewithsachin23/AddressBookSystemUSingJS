@@ -66,6 +66,17 @@ class AddNewContact{
         console.log(`CountByCityOrSatat ${count}`)
 
     }
+    
+    sortContactsByName() {
+        this.contacts.sort((a, b) => {
+            let nameA = a.firstName.toLowerCase();
+            let nameB = b.firstName.toLowerCase();
+            return nameA.localeCompare(nameB);
+        });
+
+        console.log("\nContacts sorted by Name:");
+        this.contacts.forEach(contact => console.log(contact.toString()));
+    }
 
 }
 module.exports =AddNewContact;
